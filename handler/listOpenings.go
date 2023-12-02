@@ -7,6 +7,16 @@ import (
 	"github.com/marciovasconcelosjr/gopportunities/schemas"
 )
 
+// @BasePath /api/v1
+
+// @Summary Get openings
+// @Description Get a new job opening
+// @Tags Openings
+// @Accept json
+// @Produce json
+// @Sucess 200 {object} ListOpeningsResponse
+// @Failure 500 {object} ErrorResponse
+// @Router /openings [get]
 func ListOpeningsHandler(ctx *gin.Context) {
 	openings := []schemas.Opening{}
 
